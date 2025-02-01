@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>UFO-Glider</title>
+</head>
+<body>
+<canvas class="webgl"></canvas>
+
+<div id="menu" hidden>
+    <p id="won" hidden>You reached the planet!</p>
+    <p id="lost" hidden>Your UFO was destroyed. Try again!</p>
+    <p id="instructions">
+        Goal:<br>
+        Reach your planet safely<br>
+        <br>
+        Controls:<br>
+        Navigate: Arrow Keys<br>
+        Shoot: Space</p>
+    <button id="play">PLAY</button>
+    <div id="upgrades">
+        <div id="starsContainerUpgrades">
+            <p id="starsUpgrades">0</p>
+            <img src="../assets/star/star-icon.png" alt="Star">
+        </div>
+        <div id="upgradesShieldContainer">
+            <button id="upgradesShield"></button>
+        </div>
+        <div id="upgradesWeaponContainer">
+            <button id="upgradesWeapon"></button>
+        </div>
+        <div id="upgradesSkipContainer">
+            <button id="upgradesSkip"></button>
+        </div>
+    </div>
+</div>
+
+<div id="ui" hidden>
+    <div id="starsContainer">
+        <p id="stars">0</p>
+        <img src="../assets/star/star-icon.png" alt="Star">
+    </div>
+    <div id="distanceContainer">
+        <img src="../assets/spaceStation/space-station.png" alt="Distance">
+        <p id="distance">0</p>
+    </div>
+</div>
+</body>
+</html>

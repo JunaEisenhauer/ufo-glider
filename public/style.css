@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+/*.webgl {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    outline: none;*/
+/*}*/
+
+/* MENU */
+#menu {
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#won {
+    position: absolute;
+    color: darkgreen;
+    width: 500px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    top: 10%;
+    left: 50%;
+}
+
+#lost {
+    position: absolute;
+    color: darkred;
+    width: 500px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    top: 10%;
+    left: 50%;
+}
+
+#instructions {
+    position: absolute;
+    color: darkblue;
+    width: 500px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    top: 20%;
+    left: 80%;
+}
+
+#menu button {
+    position: absolute;
+    font-family: 'RocknRoll One', sans-serif;
+    border-radius: 20px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#play {
+    top: 30%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    background-color: blue;
+}
+
+#starsContainerUpgrades {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 30%;
+    left: 50%;
+}
+
+#starsUpgrades {
+    display: inline;
+    position: relative;
+    top: -15px;
+    font-size: 50px;
+}
+
+#upgrades {
+    /*position: absolute;*/
+    /*transform: translate(-50%);*/
+    /*bottom: 25%;*/
+    /*left: 50%;*/
+}
+
+#upgradesShieldContainer {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 25%;
+    left: 35%;
+}
+
+#upgradesShield {
+    font-size: 20px;
+    width: 220px;
+    height: 80px;
+}
+
+#upgradesWeaponContainer {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 25%;
+    left: 50%;
+}
+
+#upgradesWeapon {
+    font-size: 20px;
+    width: 220px;
+    height: 80px;
+}
+
+#upgradesSkipContainer {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 25%;
+    left: 65%;
+}
+
+#upgradesSkip {
+    font-size: 20px;
+    width: 220px;
+    height: 80px;
+}
+
+.locked {
+    background-color: orange;
+}
+
+.affordable {
+    background-color: blue;
+}
+
+.unlocked {
+    background-color: green;
+}
+
+/* UI */
+#ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 50px;
+}
+
+#ui img {
+    padding-top: 20px;
+}
+
+#starsContainer {
+    position: absolute;
+    top: 0;
+    float: right;
+    right: 20px;
+}
+
+#stars {
+    display: inline;
+    position: relative;
+    top: -15px;
+}
+
+#distanceContainer {
+    position: absolute;
+    top: 0;
+    float: left;
+    left: 20px;
+}
+
+#distance {
+    display: inline;
+    position: relative;
+    top: -15px;
+}
+
+/*.level {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 40px;
+    bottom: 100px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    transform: translateX(-50%);
+}
+
+.level:hover:enabled {
+    cursor: pointer;
+    width: 220px;
+    height: 120px;
+    box-shadow: 0 9px #999;
+}
+
+.level:disabled {
+    background-color: red;
+}
+
+#level1 {
+    left: 30%;
+}
+
+#level2 {
+    left: 50%;
+}
+
+#level3 {
+    left: 70%;
+}
+
+#instructions {
+    position: absolute;
+    bottom: 450px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    width: 500px;
+    left: 80%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#endScreen * {
+    position: absolute;
+    bottom: 250px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+#win {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+#gameOver {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 50px;
+}
+
+#ui img {
+    padding-top: 20px;
+}
+
+#lifeContainer {
+    position: absolute;
+    left: 20px;
+}
+
+#scoreContainer{
+    position: absolute;
+    top: 0;
+    float: right;
+    right: 20px;
+}
+
+#lives{
+    display: inline;
+    position: relative;
+    top: -15px;
+}
+
+#score{
+    display: inline;
+    position: relative;
+    top: -15px;
+}*/
